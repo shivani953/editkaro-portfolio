@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Editkaro</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">Editkaro<span>.in</span></div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="portfolio">
+
+<h1>Our Portfolio</h1>
+
+<div class="filters">
+
+<button class="filter-btn active" data-filter="all">All</button>
+
+<button class="filter-btn" data-filter="football">Football</button>
+
+<button class="filter-btn" data-filter="gaming">Gaming</button>
+
+
+<button class="filter-btn" data-filter="ads">Ads</button>
+
+<button class="filter-btn" data-filter="documentary">Documentary</button>
+
+</div>
+
+<div class="portfolio-grid">
+
+<div class="card" data-category="football">
+<img src="assets/images/football.jpg" alt="">
+<div class="overlay"
+onclick="openVideo('assets/videos/football.mp4')">
+▶ Watch Video
+</div>
+<h3>Football Edit</h3>
+</div>
+
+<div class="card" data-category="gaming">
+<img src="assets/images/gaming.jpg" alt="">
+<div class="overlay"
+onclick="openVideo('assets/videos/gaming.mp4')">
+▶ Watch Video
+</div>
+<h3>Gaming Edit</h3>
+</div>
+
+
+
+<div class="card" data-category="ads">
+<img src="assets/images/ads.jpg" alt="">
+<div class="overlay"
+onclick="openVideo('assets/videos/ads.mp4')">
+▶ Watch Video
+</div>
+<h3>Advertisement</h3>
+</div>
+
+<div class="card" data-category="documentary">
+<img src="assets/images/documentary.jpg" alt="">
+<div class="overlay"
+onclick="openVideo('assets/videos/documentary.mp4')">
+▶ Watch Video
+</div>
+<h3>Documentary</h3>
+</div>
+
+
+</div>
+
+</section>
+
+<!-- Video Popup -->
+
+<div class="modal" id="videoModal">
+
+<span class="close"
+onclick="closeVideo()">&times;</span>
+
+<video id="popupVideo" controls>
+<source src="">
+</video>
+
+</div>
+
+<script src="js/filter.js"></script>
+<script src="js/modal.js"></script>
+
+</body>
+</html>
+
